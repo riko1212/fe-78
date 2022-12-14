@@ -1,0 +1,72 @@
+:root {
+  --main-font: 'Open Sans', sans-serif;
+}
+
+/* @font-face {
+  font-family: Andruha-700;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: Andruha-400;
+  src: url(../fonts/OpenSans-Regular.ttf);
+} */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: aqua;
+  /* letter-spacing: 0.1em; */
+  /* 1.6 */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-body {
+}
+.header {
+  background-color: gray;
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
