@@ -17,6 +17,20 @@
   font-family: Andruha-400;
   src: url(../fonts/OpenSans-Regular.ttf);
 } */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -56,6 +70,15 @@ body {
   cursor: pointer;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
 .title {
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
@@ -77,6 +100,8 @@ body {
 
 .header {
   background-color: gray;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-navigation {
 }
@@ -138,6 +163,7 @@ body {
 
 .hero-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .hero-title {
   font-family: 'Raleway', sans-serif;
@@ -145,6 +171,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--first-title-color, #ffffff);
+  margin-bottom: 20px;
 }
 
 .hero-title::first-letter {
@@ -164,6 +191,8 @@ body {
 /*---------- ABOUT------------ */
 
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .about-list {
 }
@@ -172,21 +201,25 @@ body {
 }
 .about-pre-title {
   color: #303030;
+  margin-bottom: 20px;
 }
 .about-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .about-after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 20px;
 }
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 42px;
 }
 .about-btn {
   color: #303030;
@@ -196,12 +229,16 @@ body {
 
 .prices {
   background-color: #303030;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .prices-title {
   color: var(--first-title-color);
+  margin-bottom: 44px;
 }
 
 .prices-list {
@@ -222,6 +259,8 @@ body {
 /*---------- BENEFITS------------ */
 
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-list {
 }
@@ -243,9 +282,11 @@ body {
 }
 .benefits-pre-title {
   color: var(--main-text-color);
+  margin-bottom: 20px;
 }
 .benefits-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .benefits-after-title {
   font-size: 18px;
@@ -257,12 +298,16 @@ body {
 /*---------- BARBERS------------ */
 
 .barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .barbers-pre-title {
   color: var(--main-text-color);
+  margin-bottom: 20px;
 }
 .barbers-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 .barbers-list {
 }
