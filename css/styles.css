@@ -100,6 +100,16 @@ body {
   font-size: 11px;
   line-height: var(--typical-lh);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pre-title::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: currentColor;
 }
 
 .site-body {
@@ -210,10 +220,24 @@ body {
   letter-spacing: 0.05em;
   color: var(--first-title-color, #ffffff);
   margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+/* .hero-title::first-letter {
+  color: aquamarine;
+} */
+
+.hero-title::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/barbers-img-3.jpeg);
+  background-size: cover;
 }
 
-.hero-title::first-letter {
-  color: aquamarine;
+.hero-title::after {
+  content: '!';
 }
 
 .hero-title::selection {
@@ -278,7 +302,13 @@ body {
 /*---------- PRICES------------ */
 
 .prices {
-  background-color: #303030;
+  background-color: #111319;
+  background-image: url(../img/prices-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -298,14 +328,32 @@ body {
 }
 
 .prices-list {
-  border: 1px solid #ffffff;
   width: calc((100% - 30px) / 2);
   padding: 30px 20px;
+}
+
+.prices-list:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .prices-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.prices-item::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+
+  flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
 }
 
 .prices-item + .prices-item {
@@ -316,6 +364,10 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.prices-item-text:last-child {
+  order: 1;
 }
 .prices-btn {
   color: #ffffff;
@@ -329,7 +381,35 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.benefits > .container {
+  display: flex;
+  gap: 130px;
+  padding-left: 85px;
+}
+
+.benefits-wrap {
+  max-width: 500px;
+}
 .benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7;
+  padding: 20px 24px;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 .benefits-item .count {
   font-weight: 700;
@@ -338,6 +418,8 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  text-align: center;
+  display: block;
 }
 
 .benefits-item-text {
