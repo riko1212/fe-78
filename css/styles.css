@@ -556,8 +556,14 @@ body {
 
 /*---------- GALLERY------------ */
 
+.gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .gallery-pre-title {
   color: var(--main-text-color);
+  margin-bottom: 44px;
 }
 
 .gallery-list {
@@ -569,4 +575,117 @@ body {
 
 .gallery-item {
   width: calc((100% - 90px) / 4);
+}
+
+.contact-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #191c26;
+
+  background-image: url(../img/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+}
+
+.contact-wrap > .container {
+  display: flex;
+}
+
+/*---------- ONLINE------------ */
+
+.online {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  width: calc(50% + 15px);
+}
+
+.online-title {
+  color: var(--first-title-color);
+}
+
+/*---------- CONTACTS------------ */
+
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  width: calc(50% - 15px);
+  padding-left: 100px;
+}
+.contacts-title {
+  color: var(--first-title-color);
+  margin-bottom: 40px;
+}
+
+.contacts-address {
+  font-style: normal;
+  margin-bottom: 70px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-link.bold {
+  font-weight: 700;
+}
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.contacts-schedule {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/*---------- FOOTER------------ */
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+}
+
+.footer-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
