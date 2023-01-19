@@ -419,6 +419,28 @@
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Online-booking</h2>
+            <form class="online-form">
+              <input
+                type="text"
+                class="online-input online-item"
+                placeholder="Name*"
+                name="online-name "
+                required
+              />
+              <input
+                type="tel"
+                class="online-input online-item"
+                placeholder="Phone*"
+                name="online-tel"
+                required
+              />
+              <textarea
+                name="online-message"
+                class="online-text online-item"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="online-btn btn">Send</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
@@ -479,7 +501,7 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
         <p class="modal-title">Заголовок модального вікна</p>
@@ -521,6 +543,7 @@
             placeholder="Введіть телефон"
             name="user-tel"
             required
+            value="+380"
           />
           <div class="modal-field">
             <label for="user-text" class="input-text">Введіть комент</label>
@@ -533,12 +556,52 @@
             ></textarea>
           </div>
           <div class="modal-field">
-            <label for="user-city" class="input-text">Виберіть місто</label>
-            <select name="user-city" id="user-city" class="modal-input">
-              <option value="london">London</option>
-              <option value="paris">Paris</option>
-              <option value="Novyi Rozdil">Novyi Rozdil</option>
-            </select>
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value="true"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Політика приватності <a href=""></a>
+            </label>
+          </div>
+          <div class="modal-field">
+            <ul class="filter-list list">
+              <li class="filter-item">
+                <input
+                  type="radio"
+                  id="all"
+                  name="filter"
+                  class="filter-radio visually-hidden"
+                />
+                <label for="all" class="filter-btn">all</label>
+              </li>
+              <li class="filter-item">
+                <input
+                  type="radio"
+                  id="design"
+                  name="filter"
+                  class="filter-radio visually-hidden"
+                />
+                <label for="design" class="filter-btn">design</label>
+              </li>
+              <li class="filter-item">
+                <input
+                  type="radio"
+                  id="marketing"
+                  name="filter"
+                  class="filter-radio visually-hidden"
+                />
+                <label for="marketing" class="filter-btn">marketing</label>
+              </li>
+            </ul>
           </div>
           <button type="submit">Піца</button>
           <button type="reset">Передумав</button>
