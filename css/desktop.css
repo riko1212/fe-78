@@ -3,6 +3,30 @@
     width: 1200px;
   }
 
+  /*---------- HERO------------ */
+
+  .hero > .container {
+    width: 1200px;
+  }
+
+  .hero-wrap {
+    padding: 272px 100px 208px;
+    background-image: var(--bg-gradient), url(../img/hero-bg.jpeg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--bg-gradient), url(../img/hero-bg-2x.jpeg);
+    }
+  }
+
+  .hero-title {
+    font-size: 72px;
+    line-height: 1.18;
+  }
+
   .barbers {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -16,6 +40,8 @@
     width: calc((100% - 60px) / 3);
   }
 
+  /*---------- TEST------------ */
+
   .test {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -24,6 +50,8 @@
   .test-item {
     width: calc((100% - 150px) / 6);
   }
+
+  /*---------- GALLERY------------ */
 
   .gallery {
     padding-top: 120px;

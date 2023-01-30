@@ -2,4 +2,7 @@
   .container {
     width: 448px;
   }
+  .hero-wrap {
+    padding: 210px 30px;
+  }
 }
